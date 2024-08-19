@@ -1,5 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fa0, faCodeBranch, faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
     return (
@@ -22,8 +24,8 @@ const Footer = () => {
                         <p>Correo: dashsocial@dashsystemsmty.com</p>
                         <hr />
                         <h4>Redes</h4>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
+                        <li><i className="fa-brands fa-square-facebook"></i></li>
+                        <li><i className="fa-brands fa-instagram"></i></li>
                     </Col>
                 </Row>
                 <Row>
