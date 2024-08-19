@@ -1,0 +1,14 @@
+nav {
+    background-color: #191E29;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.navbar-brand {
+    margin-left: 200px;
+}
+
+.navbar-collapse {
+    margin-right: 200px;
+    justify-content: end;
+}

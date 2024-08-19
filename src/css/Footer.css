@@ -1,0 +1,68 @@
+.footer {
+    width: 100%;
+    background-color: #191E29;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: auto;
+}
+
+.imgLogo {
+    width: 350px;
+    height: 350px;
+    background-image: url('../assets/Logo_Slogan_Grande.png');
+    background-size: cover;
+}
+
+.menuFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+hr {
+    border: none;
+    border-top: 5px solid white;
+    margin: 20px 0;
+    width: 80%;
+}
+
+.menuFooter>ul {
+    padding: 0 !important;
+    list-style: none;
+}
+
+.menuFooter>ul>li {
+    margin-bottom: 15px;
+}
+
+.footerContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 50px;
+}
+
+.footerContacto>li {
+    padding: 0 !important;
+    list-style: none;
+}
+
+.footerRedes {
+    margin-top: 15px;
+}
+
+.footerRedes>a {
+    margin-right: 15px;
+}
+
+.footerRedes>a>svg {
+    width: 30px;
+    height: 30px;
+}
