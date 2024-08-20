@@ -1,9 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../css/Footer.css'
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import '../css/Footer.css'
 
 const Footer = () => {
     return (

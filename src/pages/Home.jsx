@@ -1,31 +1,34 @@
 import React from 'react';
-import { Button, Card, Col, ListGroup, Row } from 'react-bootstrap';
+import { Button, Card, Col, Container, ListGroup, Row } from 'react-bootstrap';
+import LogoSloganChico from '../assets/Logo_Slogan_Grande.png';
+import NosotrosImg from '../assets/nosotros.jpg'
+import '../css/Home.css'
 
 const Home = () => {
     return (
         <>
-            <div className="container">
+            <Container className="homeContainer">
                 <Row>
-                    <Col xs={6}>
-                        <div className="logo" />
+                    <Col xs={12} className='d-flex justify-content-center'>
+                        <img className='logo' src={LogoSloganChico} alt="Dash Systems Logo" />
                     </Col>
-                    <Col xs={6}>
+                    <Col xs={12}>
                         <div className="heroBox">
                             <h1>Agenda una consulta</h1>
                             <Button variant="outline-light">Light</Button>
                         </div>
                     </Col>
                 </Row>
-            </div>
-            <div className="nosotros">
+            </Container>
+            <Container className="nosotros">
                 <Row>
                     <Col>
-                        <h2>Quienes somos?</h2>
+                        <h2 className='homeWeAre'>Quienes somos?</h2>
                     </Col>
                 </Row>
                 <Row>
                     <Col xs={6}>
-                        <div className="imgNosotros" />
+                        <img src={NosotrosImg} alt="Foto de Tranmautritam: https://www.pexels.com/es-es/foto/escritorio-tecnologia-teclado-raton-326515/" />
                     </Col>
                     <Col xs={6}>
                         <div className="description">
@@ -38,7 +41,7 @@ const Home = () => {
                         <Button variant="outline-info">Ver mas</Button>
                     </Col>
                 </Row>
-            </div>
+            </Container>
             <div className="servicios">
                 <Row>
                     <Col>

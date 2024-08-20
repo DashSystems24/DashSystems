@@ -1,0 +1,21 @@
+.homeContainer {
+    padding-bottom: 50px;
+    width: 100%;
+    background: #132D46;
+    color: white;
+}
+
+.logo {
+    width: 300px !important;
+    height: 300px !important;
+}
+
+.nosotros {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #fcfcfc;
+}
+
+.homeWeAre {
+    margin-bottom: 50px;
+}
