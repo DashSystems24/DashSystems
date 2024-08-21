@@ -1,5 +1,6 @@
+/* Estilos Seccion: Header */
 .homeContainer {
-    padding-bottom: 50px;
+    padding: 50px;
     width: 100%;
     background: #132D46;
     color: white;
@@ -10,12 +11,79 @@
     height: 300px !important;
 }
 
+/* Estilos Seccion: Nosotros*/
 .nosotros {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px;
     background: #fcfcfc;
 }
 
 .homeWeAre {
     margin-bottom: 50px;
+}
+
+.imgNosotros>img {
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.description {
+    width: 450px;
+    text-align: justify;
+}
+
+/* Estilos seccion: Nuestros Servicios */
+
+.servicios {
+    padding: 50px;
+    background: #132D46;
+    color: white;
+}
+
+.titleServ {
+    margin-bottom: 20px;
+}
+
+.titleServ>p {
+    width: 750px;
+}
+
+.btnServ {
+    margin-top: 20px;
+    width: 200px;
+}
+
+/* Estilos seccion: Nuestros proyectos*/
+
+.portfolio {
+    padding: 50px;
+    background: #fcfcfc;
+}
+
+.titlePortfolio {
+    margin-bottom: 20px;
+}
+
+.titlePortfolio>p {
+    margin-top: 20px;
+    width: 750px;
+    text-align: justify;
+}
+
+/* Estilos sección: testimonios */
+
+.testimonios {
+    padding: 50px;
+    background: #132D46;
+    color: white;
+}
+
+.card {
+    width: 500px;
+}
+
+.card-text {
+    padding-top: 10px;
+    text-align: justify;
 }
