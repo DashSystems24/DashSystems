@@ -49,7 +49,7 @@ const Contacto = () => {
             </div>
             <div className="pageContact">
                 <Row>
-                    <Col xs={6} className="d-flex justify-content-center">
+                    <Col xl={6} xs={12} className="d-flex justify-content-center">
                         <div className="boxContacto">
                             <h4>Contactanos</h4>
                             <p>¡Ponte en contacto hoy!</p>
@@ -59,7 +59,7 @@ const Contacto = () => {
                             <p>(81)-2337-4469</p>
                         </div>
                     </Col>
-                    <Col xs={6}>
+                    <Col xl={6} xs={12}>
                         <form onSubmit={handleSubmit}>
                             <div className="formContact">
                                 <FloatingLabel

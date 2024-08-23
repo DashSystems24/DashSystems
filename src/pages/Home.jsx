@@ -16,7 +16,7 @@ const Home = () => {
         <>
             <div className="homeContainer">
                 <Row className='justify-content-center'>
-                    <Col xl={4} className='d-flex justify-content-end'>
+                    <Col xl={4} className='contLogo d-flex justify-content-xl-end justify-content-center'>
                         <img className='logo' src={LogoSloganChico} alt="Dash Systems Logo" />
                     </Col>
                     <Col xl={6} className='d-flex justify-content-center align-items-center'>
@@ -34,7 +34,7 @@ const Home = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={6} className="imgNosotros d-flex justify-content-end">
+                    <Col sm={12} xl={6} className="imgNosotros d-flex justify-content-xl-end justify-content-center">
                         <img src={NosotrosImg} alt="Foto de Tranmautritam: https://www.pexels.com/es-es/foto/escritorio-tecnologia-teclado-raton-326515/" />
                     </Col>
                     <Col xs={6} className='boxnosotros d-flex flex-column justify-content-center align-items-start'>
@@ -53,7 +53,7 @@ const Home = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className='d-flex justify-content-end'>
+                    <Col className='d-flex justify-content-xl-end justify-content-center'>
                         <Card style={{ width: '18rem', marginBottom: '20px' }}>
                             <Card.Img variant="top" src={DiseñoUI} />
                             <Card.Body>
@@ -64,7 +64,7 @@ const Home = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col className='d-flex justify-content-start'>
+                    <Col className='d-flex justify-content-xl-start justify-content-center'>
                         <Card style={{ width: '18rem', marginBottom: '20px' }}>
                             <Card.Img variant="top" src={SitiosWeb} />
                             <Card.Body>
@@ -77,7 +77,7 @@ const Home = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className='d-flex justify-content-end'>
+                    <Col className='d-flex justify-content-xl-end justify-content-center'>
                         <Card style={{ width: '18rem', marginBottom: '20px' }}>
                             <Card.Img variant="top" src={Posicionamiento} />
                             <Card.Body>
@@ -88,7 +88,7 @@ const Home = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col className='d-flex justify-content-start'>
+                    <Col className='d-flex justify-content-xl-start justify-content-center'>
                         <Card style={{ width: '18rem', marginBottom: '20px' }}>
                             <Card.Img variant="top" src={DesarrolloMedida} />
                             <Card.Body>
@@ -109,7 +109,7 @@ const Home = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={6} className='d-flex justify-content-end'>
+                    <Col xl={6} sm={12} className='d-flex justify-content-xl-end justify-content-xs-center'>
                         <Card className='top' style={{ width: '18rem' }}>
                             <Card.Img variant="top" src={Topp} />
                             <Card.Body>
@@ -126,7 +126,7 @@ const Home = () => {
                             </ListGroup>
                         </Card>
                     </Col>
-                    <Col xs={6} className='d-flex justify-content-start'>
+                    <Col xxl={6} sm={12} className='d-flex justify-content-xl-start justify-content-sm-center'>
                         <Card className='virtual' style={{ width: '18rem' }}>
                             <Card.Img variant="top" src={Virtual} />
                             <Card.Body>

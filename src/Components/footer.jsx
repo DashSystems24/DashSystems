@@ -9,12 +9,12 @@ const Footer = () => {
         <>
             <div className="footer">
                 <Row>
-                    <Col xs={'4'} className='d-flex justify-content-center'>
+                    <Col xl={'4'} xs={12} className='d-flex justify-content-center'>
                         <div className="logo">
                             <div className="imgLogo" />
                         </div>
                     </Col>
-                    <Col xs={'4'}>
+                    <Col xl={'4'} xs={12}>
                         <div className="menuFooter">
                             <h4>Menu</h4>
                             <hr />
@@ -25,8 +25,8 @@ const Footer = () => {
                             </ul>
                         </div>
                     </Col>
-                    <Col xs={'4'}>
-                        <div className="footerContacto">
+                    <Col xl={'4'} xs={12}>
+                        <div className="footerContacto align-items-center">
                             <h4>Contacto</h4>
                             <p>Correo: dashsocial@dashsystemsmty.com</p>
                             <hr />

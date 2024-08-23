@@ -75,12 +75,6 @@
 
 /* Estilos seccion: Nuestros Servicios */
 
-/*.servicios {
-    padding: 50px;
-    background: #132D46;
-    color: white;
-}*/
-
 .servicios {
     position: relative;
     margin-top: 50px;
@@ -178,4 +172,51 @@
 .card-header {
     color: white !important;
     background: linear-gradient(#1EFFFF, #147D6C);
+}
+
+/* Resolucion para dispositivos moviles*/
+
+@media only screen and (max-width: 450px) {
+    .logo {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    .imgNosotros>img {
+        width: 400px;
+        height: 250px;
+    }
+
+    .description,
+    .boxnosotros>button {
+        margin-left: 0;
+    }
+
+    .description {
+        width: 350px;
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    .titleServ>p {
+        width: 350px;
+    }
+
+    .titlePortfolio>p {
+        width: 350px;
+    }
+
+    .top {
+        margin-bottom: 25px;
+        margin-right: 0;
+        margin-left: 25px;
+    }
+
+    .virtual {
+        margin-left: 25px;
+    }
+
+    .cardTesti {
+        margin-bottom: 25px;
+    }
 }
