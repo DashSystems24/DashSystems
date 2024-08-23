@@ -11,9 +11,9 @@ const NavBarMenu = () => {
             <Navbar.Collapse id="navbarColor01">
                 <Nav>
                     <Nav.Link as={Link} to={"/"} >Inicio</Nav.Link>
-                    <Nav.Link as={Link} to={"/nosotros"} >Nosotros</Nav.Link>
-                    <Nav.Link as={Link} to={"/servicios"}>Servicios</Nav.Link>
-                    <Nav.Link as={Link} to={"/proximamente"}>Proximamente</Nav.Link>
+                    <Nav.Link as={Link} to={"/nosotros"} disabled>Nosotros</Nav.Link>
+                    <Nav.Link as={Link} to={"/servicios"} disabled>Servicios</Nav.Link>
+                    <Nav.Link as={Link} to={"https://soon.dashsystemsmty.com"} >Proximamente</Nav.Link>
                     <Nav.Link as={Link} to={"/contacto"}>Contacto</Nav.Link>
                 </Nav>
             </Navbar.Collapse>

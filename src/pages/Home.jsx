@@ -9,19 +9,20 @@ import DesarrolloMedida from '../assets/DesarrolloMedida.jpg';
 import Topp from '../assets/Topp.png';
 import Virtual from '../assets/Virtual.png';
 import '../css/Home.css'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
         <>
             <div className="homeContainer">
-                <Row>
-                    <Col xl={6} className='d-flex justify-content-center'>
+                <Row className='justify-content-center'>
+                    <Col xl={4} className='d-flex justify-content-end'>
                         <img className='logo' src={LogoSloganChico} alt="Dash Systems Logo" />
                     </Col>
-                    <Col xl={6} className='d-flex align-items-center'>
+                    <Col xl={6} className='d-flex justify-content-center align-items-center'>
                         <div className="heroBox">
                             <h2>Da a conocer tu negocio, Agenda una consulta</h2>
-                            <Button variant="outline-light">Contactanos</Button>
+                            <Link to={"/contacto"}><Button variant="outline-light">Contactanos</Button></Link>
                         </div>
                     </Col>
                 </Row>
@@ -33,14 +34,13 @@ const Home = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={6} className="imgNosotros">
+                    <Col xs={6} className="imgNosotros d-flex justify-content-end">
                         <img src={NosotrosImg} alt="Foto de Tranmautritam: https://www.pexels.com/es-es/foto/escritorio-tecnologia-teclado-raton-326515/" />
                     </Col>
-                    <Col xs={6} className='d-flex flex-column justify-content-center align-items-center'>
+                    <Col xs={6} className='boxnosotros d-flex flex-column justify-content-center align-items-start'>
                         <div className="description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita reprehenderit nisi! Expedita odio magnam voluptas cupiditate esse reiciendis optio illo architecto ipsum asperiores voluptatem fugiat, accusamus reprehenderit dolorem alias? Reprehenderit ut quidem consectetur sed possimus, cumque tempore unde illum sit dolor accusantium cupiditate voluptatem.</p>
+                            <p>Somos una agencia de desarrollo dedicada a llevar tu negocio al siguiente nivel digital. Nos especializamos en crear aplicaciones web y móviles personalizadas, combinando diseño creativo con tecnología de vanguardia para impulsar tu marca y mejorar tu visibilidad en línea. Con un enfoque en calidad, innovación y colaboración constante, estamos aquí para transformar tus ideas en realidades digitales.</p>
                         </div>
-                        <Button variant="outline-info">Ver mas</Button>
                     </Col>
                 </Row>
             </div>
@@ -49,7 +49,7 @@ const Home = () => {
                     <Col className='titleServ d-flex flex-column justify-content-center align-items-center'>
                         <h1>Nuestros Servicios</h1>
                         <br />
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eaque dolorum doloribus, reiciendis adipisci minus sint consectetur et iste aliquam dolores animi odit. Iure dolores corrupti aut soluta odio illum distinctio explicabo nihil, animi delectus?</p>
+                        <p>En Dash Systems, cada proyecto es una oportunidad para innovar y transformar ideas en soluciones digitales. Nos enfocamos en desarrollar aplicaciones y sitios web que no solo cumplen con las necesidades de nuestros clientes, sino que también superan sus expectativas, con un compromiso inquebrantable hacia la calidad y la creatividad.</p>
                     </Col>
                 </Row>
                 <Row>
@@ -59,8 +59,7 @@ const Home = () => {
                             <Card.Body>
                                 <Card.Title>Diseño UI</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+                                    Nuestro enfoque en Diseño UI se centra en crear interfaces intuitivas y atractivas que mejoran la experiencia del usuario, garantizando que cada interacción con tu aplicación o sitio web sea fluida y memorable.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -71,8 +70,7 @@ const Home = () => {
                             <Card.Body>
                                 <Card.Title>Sitios web</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+                                    Diseñamos y desarrollamos sitios web personalizados que combinan estética, funcionalidad y rendimiento, asegurando que tu presencia en línea sea impactante y efectiva para atraer y retener clientes.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -85,8 +83,7 @@ const Home = () => {
                             <Card.Body>
                                 <Card.Title>Posicionamiento</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+                                    Con nuestras estrategias de SEO y SEM, te ayudamos a mejorar tu visibilidad en los motores de búsqueda, asegurando que tu negocio alcance a más clientes potenciales y se destaque en un mercado competitivo.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -97,16 +94,10 @@ const Home = () => {
                             <Card.Body>
                                 <Card.Title>Desarrollos a medida</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+                                    En Dash Systems, creamos soluciones de diseño únicas y personalizadas, adaptadas a las necesidades específicas de tu negocio, para asegurar que tu marca se refleje de manera auténtica y poderosa.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Button className='btnServ' variant="outline-light">Light</Button>
                     </Col>
                 </Row>
             </div>
@@ -118,8 +109,8 @@ const Home = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={6} className='d-flex justify-content-center'>
-                        <Card style={{ width: '18rem' }}>
+                    <Col xs={6} className='d-flex justify-content-end'>
+                        <Card className='top' style={{ width: '18rem' }}>
                             <Card.Img variant="top" src={Topp} />
                             <Card.Body>
                                 <Card.Title>Topp & Screed Mx</Card.Title>
@@ -135,8 +126,8 @@ const Home = () => {
                             </ListGroup>
                         </Card>
                     </Col>
-                    <Col xs={6} className='d-flex justify-content-center'>
-                        <Card style={{ width: '18rem' }}>
+                    <Col xs={6} className='d-flex justify-content-start'>
+                        <Card className='virtual' style={{ width: '18rem' }}>
                             <Card.Img variant="top" src={Virtual} />
                             <Card.Body>
                                 <Card.Title>Virtual Bifrost</Card.Title>
@@ -161,20 +152,20 @@ const Home = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className='d-flex justify-content-center'>
-                        <Card>
+                    <Col className=' d-flex justify-content-end'>
+                        <Card className='cardTesti'>
                             <Card.Header>Equipos y Superficies de México</Card.Header>
                             <Card.Body>
-                                <Card.Title>Pagina: Topp & Screed Mx</Card.Title>
+                                <Card.Title><Link to="https://www.toppandscreedmx.com">Topp & Screed Mx</Link></Card.Title>
                                 <Card.Text>
                                     Topp & Screed es nuestro proveedor, necesitabamos una pagina web sencilla para dar a conocer las maquinas a nuestros clientes, diseño dinamico e intuitivo.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col className='d-flex justify-content-center'>
-                        <Card>
-                            <Card.Header>Virtual Bifrost</Card.Header>
+                    <Col className='d-flex justify-content-start'>
+                        <Card className='cardTesti'>
+                            <Card.Header className='cardtittleTop'>Virtual Bifrost</Card.Header>
                             <Card.Body>
                                 <Card.Title>Sitio Web Creativo</Card.Title>
                                 <Card.Text>

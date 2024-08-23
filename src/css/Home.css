@@ -1,20 +1,55 @@
 /* Estilos Seccion: Header */
-.homeContainer {
+/*.homeContainer {
     padding: 50px;
     width: 100%;
     background: #132D46;
     color: white;
+    z-index: 1;
+}*/
+
+.homeContainer {
+    position: relative;
+    padding: 50px;
+    width: 100%;
+    background: rgb(19, 45, 70);
+    /* Este es el color con 60% de opacidad */
+    color: white;
+    z-index: 1;
 }
 
-.logo {
+.homeContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Asegúrate de que cubre todo el contenedor */
+    background-image: url('../assets/BackgroundHeader.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    /* Transparencia de la imagen */
+    z-index: -1;
+    /* Coloca la imagen detrás del contenido */
+}
+
+.heroBox>.logo {
     width: 300px !important;
     height: 300px !important;
+}
+
+.heroBox>h2 {
+    width: 28rem;
+}
+
+.heroBox>a>button {
+    margin-top: 35px;
 }
 
 /* Estilos Seccion: Nosotros*/
 .nosotros {
     margin: 50px;
-    background: #fcfcfc;
 }
 
 .homeWeAre {
@@ -33,12 +68,44 @@
     text-align: justify;
 }
 
+.description,
+.boxnosotros>button {
+    margin-left: 50px;
+}
+
 /* Estilos seccion: Nuestros Servicios */
 
-.servicios {
+/*.servicios {
     padding: 50px;
     background: #132D46;
     color: white;
+}*/
+
+.servicios {
+    position: relative;
+    margin-top: 50px;
+    padding: 50px;
+    background: rgba(19, 45, 70, 1);
+    /* Fondo con 60% de opacidad */
+    color: white;
+    z-index: 1;
+}
+
+.servicios::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/BackgroundNosotros.jpg');
+    /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.05;
+    /* Transparencia de la imagen */
+    z-index: -1;
+    /* Imagen de fondo detrás del contenido */
 }
 
 .titleServ {
@@ -83,7 +150,32 @@
     width: 500px;
 }
 
+.card-img-top {
+    height: 200px;
+}
+
 .card-text {
     padding-top: 10px;
     text-align: justify;
+}
+
+/* Estilos seccion: Portafolio */
+
+.top {
+    margin-right: 50px;
+}
+
+.virtual {
+    margin-left: 50px;
+}
+
+/* estilos sección: testimonios */
+
+.cardTesti {
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    color: white !important;
+    background: linear-gradient(#1EFFFF, #147D6C);
 }

@@ -20,9 +20,7 @@ const Footer = () => {
                             <hr />
                             <ul>
                                 <li><Link to="/">Inicio</Link></li>
-                                <li><Link to="/nosotros">Nosotros</Link></li>
-                                <li><Link to="/servicios">Servicios</Link></li>
-                                <li><Link to="/proximamente">Proximamente</Link></li>
+                                <li><Link to="https://soon.dashsystemsmty.com">Proximamente</Link></li>
                                 <li><Link to="/contacto">Contacto</Link></li>
                             </ul>
                         </div>
@@ -39,11 +37,6 @@ const Footer = () => {
                             </div>
 
                         </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <p>Consulta los terminos y condiciones de nuestra pagina. Haz click aqui.</p>
                     </Col>
                 </Row>
             </div>

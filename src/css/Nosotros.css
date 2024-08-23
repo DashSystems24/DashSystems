@@ -1,0 +1,88 @@
+.weTittle {
+    width: 100%;
+    height: 250px;
+    background-color: #132D46;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.weTittle>h4 {
+    margin-top: 25px;
+    width: 50%;
+    align-self: center;
+}
+
+.myv {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cardM,
+.cardV {
+    background-color: bisque;
+    border-radius: 20px;
+    box-shadow: 4px 8px 8px rgb(0, 0, 0, .3);
+    padding: 10px;
+}
+
+.cardM {
+
+    margin-right: 50px;
+
+}
+
+.cardV {
+    margin-left: 50px;
+}
+
+.cardM>p,
+.cardV>p {
+    text-align: justify;
+}
+
+.valores,
+.difference {
+    width: 100%;
+    height: auto;
+    background-color: #132D46;
+    color: aliceblue;
+}
+
+.boxDif,
+.boxVal {
+    margin-top: 50px !important;
+    margin-bottom: 50px
+}
+
+.boxVal>p,
+.boxDif>p {
+    margin-top: 15px;
+    width: 24rem;
+    text-align: justify;
+}
+
+.btnContacto {
+    margin-top: 50px !important;
+    margin-bottom: 50px;
+}
+
+.btnContacto>button {
+    width: 200px;
+    height: 50px;
+}
+
+.btnContacto>button:hover {
+    box-shadow: 4px 8px 8px rgb(0, 0, 0, .3);
+}
+
+.btnContacto>button>a {
+    text-decoration: none;
+    color: white;
+}
+
+.btnContacto>button>a:hover {
+    text-decoration: underline;
+    color: #01C38D;
+
+}
